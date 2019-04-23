@@ -1,0 +1,42 @@
+body{
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.container{
+  width: 400px;
+  height:300px;
+  margin: 5px auto;
+  background-image: url(../images/chalkboard-green-background.jpg);
+  background-size: cover;
+  border-radius: 1em;
+  position: relative;
+}
+
+#btn{
+  font-size: 1em;
+  padding: 0.5em 1.5em;
+  background: secondary;
+  border-radius: 1.5em;
+  border: 2px solid secondary;
+  color: #999;
+  transition: 0.2s;
+  outline: none;
+
+}
+#btn:hover{
+  background: #999;
+  color: white;
+  border: 2px solid #999;
+  text-decoration: none;
+}
+
+.container img{
+margin-right: 50px;
+  margin-left: auto;
+}
+
+button a{
+  text-decoration: none;
+  color: white;
+}
