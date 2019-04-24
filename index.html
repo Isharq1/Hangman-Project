@@ -5,7 +5,7 @@
     <title>Hangman project</title>
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
   </head>
   <body>
@@ -15,9 +15,10 @@
       <div id="btnCars" class="button" onload="chooseCars">Cars
     </div> -->
       <div class="category">
-        <a href="../project/pages/page1.html">Main menu</a>
+          <a href="../project/pages/page1.html">Main menu</a>
+          <a id="reset" href="../project/index.html">Reset</a>
         <h1>HANGMAN</h1>
-
+        <h3 id='message'>Type in a letter</h3>
         <div class="gameBoard">
           </div>
           <h3 id="puzzle">_ _ _ _</h3>
@@ -25,11 +26,11 @@
           <div>
 
 
-            <div class="lives">You have <b><span id="count">5</span id="lives"> </b>Lives left</div>
+            <div class="lives">You have <b><span id="count">6</span id="lives"> </b>Lives left</div>
           <div class="side-by-side">
             <div class="wordsUsed">
               <h3>Words Used</h3>
-              <p id='wordsUsed'></p>
+              <p id='wordsUsed' ></p>
             </div>
             <img id="stickman" src="../project/images/2278-190x190.jpg" height="120px" width="100px" >
 
