@@ -3,14 +3,25 @@ body{
   text-align: center;
 }
 
-.container{
+.category{
   width: 400px;
   height:400px;
-  margin: 5px auto;
+  margin: 5px 30%;
   background-image: url(../images/chalkboard-green-background.jpg);
   background-size: cover;
   border-radius: 1em;
-  position: relative;
+  position: absolute;
+}
+
+.overlayer{
+  width: 400px;
+  height:400px;
+  margin: 5px 30%;
+  background-image: url(../images/chalkboard-green-background.jpg);
+  background-size: cover;
+  border-radius: 1em;
+  position: absolute;
+  z-index: 1;
 }
 
 .side-by-side{
@@ -41,5 +52,9 @@ a{
 
 .buttons{
   text-align: center;
+}
+
+.bottom{
+  font-size: 3em;
 
 }

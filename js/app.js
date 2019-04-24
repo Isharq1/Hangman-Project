@@ -19,11 +19,15 @@ document.addEventListener("DOMContentLoaded", function(){
   var wordsUsed =document.getElementById('wordsUsed');
   var hangman = document.getElementById('stickman').src;
   var winCondition =document.getElementById('message');
+  var overlayer = document.getElementById('overlayer');
 
 
   document.getElementById("medium").addEventListener("click", medium);
   document.getElementById("hard").addEventListener("click", hard);
   document.getElementById("easy").addEventListener("click", easy);
+  document.getElementById("catAnimals").addEventListener("click", catAnimals);
+  document.getElementById("catCars").addEventListener("click", catCars);
+
   //=====================Upon starting new game=================
   function easy() {
    lives =9
@@ -48,6 +52,17 @@ document.addEventListener("DOMContentLoaded", function(){
    document.getElementById('hard').disabled = true;
   }
 
+  function catAnimals() {
+    var parent = overlayer.parentNode;
+    parent.removeChild(overlayer)
+
+  }
+  function catCars() {
+    var parent = overlayer.parentNode;
+    parent.removeChild(overlayer)
+
+  }
+
   //pick a random words
   function startGame(){
     random = animals[Math.floor( Math.random()*animals.length)];
@@ -65,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
   function hangmanImage() {
     if (lives == 8) {
-      document.getElementById('stickman').src = '../project/images/tumblr_inline_pg0k73U7BJ1rh6ctt_500 copy 2.png';
+      document.get.ElementById('stickman').src = '../project/images/tumblr_inline_pg0k73U7BJ1rh6ctt_500 copy 2.png';
 
     } else if (lives == 7) {
       document.getElementById('stickman').src = '../project/images/tumblr_inline_pg0k73U7BJ1rh6ctt_500 copy 3.png';
@@ -109,7 +124,7 @@ document.addEventListener("DOMContentLoaded", function(){
   //check if the user has won or lost
   //==================check winning conditions=================
   function winOrLose(){
-    if (winCounter == random.length)
+    if (winCounter === random.length)
     {
 
       winCondition.innerHTML= 'Congratulations, you have WON!!!'
@@ -139,7 +154,7 @@ document.addEventListener("DOMContentLoaded", function(){
         //for random word if the guess equals the random word then go to the underscope and replace with the word
         if (random[i] === userGuess & lives>1)
         {
-            underScores[i] = userGuess
+            underScores[i] = userGuess;
             winCounter++;
             console.log(underScores);
             winOrLose();
@@ -148,7 +163,7 @@ document.addEventListener("DOMContentLoaded", function(){
       }
     }
     //if it doesn't
-      else {
+      else if (lives>0) {
       wrongLetter.push(userGuess)
       //reduce life if guess is incorrect
       if (lives > 0 ) {

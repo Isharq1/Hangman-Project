@@ -10,24 +10,34 @@
   </head>
   <body>
     <div class="container">
+      <div class="overlayer" id="overlayer">
+        <div class="top">
+          <img src="../project/images/1024px-Hangman-5.svg.png" alt="" height="100px" width="150px;">
+        </div>
+        <div class="middle">
+          <h1>Categories:</h1>
+        </div>
+        <div class="bottom">
+          <button type="button" id="catAnimals">Animals</button>
+          <button type="button" id="catCars">Cars</button>
+        </div>
+      </div>
 
-      <!-- <div id="btnAnimals" class="button" onload="chooseAnimals">Animals</div>
-      <div id="btnCars" class="button" onload="chooseCars">Cars
-    </div> -->
       <div class="category">
           <a href="../project/pages/page1.html">Main menu</a>
           <a id="reset" href="../project/index.html">Reset</a>
         <h1>HANGMAN</h1>
         <div class="buttons">
+          <h5>Choose a difficulty:</h5>
           <button type="button" id="easy" >Easy</button>
           <button type="button" id="medium" >Medium</button>
           <button type="button" id="hard" >Hard</button>
+          <div class="">
+            <h3 id='message'>Type in a letter</h3>
 
-        </div>
-        <h3 id='message'>Type in a letter</h3>
-        <div class="gameBoard">
+            <h3 id="puzzle">_ _ _ _</h3>
           </div>
-          <h3 id="puzzle">_ _ _ _</h3>
+        </div>
           <div>
             <div class="lives">You have <b><span id="count">7</span id="lives"> </b>Lives left</div>
           <div class="side-by-side">
