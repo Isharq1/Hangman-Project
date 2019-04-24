@@ -5,7 +5,7 @@ body{
 
 .container{
   width: 400px;
-  height:350px;
+  height:400px;
   margin: 5px auto;
   background-image: url(../images/chalkboard-green-background.jpg);
   background-size: cover;
@@ -37,4 +37,9 @@ a{
   padding-top: 5px;
   text-decoration: none;
   color: black;
+}
+
+.buttons{
+  text-align: center;
+
 }
