@@ -1,22 +1,29 @@
 body{
   font-family: sans-serif;
   text-align: center;
+  background-image: url(../images/dark-grass-silhouette-and-grey-sky_nkwhsbqz__F0000.png);
+  background-size: cover;
+  color: gainsboro;
 }
 
+
 .category{
-  width: 400px;
+  width: 700px;
   height:400px;
-  margin: 5px 30%;
+  margin: 15px;
+  margin-left: 300px;
   background-image: url(../images/chalkboard-green-background.jpg);
   background-size: cover;
   border-radius: 1em;
   position: absolute;
+
 }
 
 .overlayer{
-  width: 400px;
+  width: 700px;
   height:400px;
-  margin: 5px 30%;
+  margin: 15px;
+  margin-left: 300px;
   background-image: url(../images/chalkboard-green-background.jpg);
   background-size: cover;
   border-radius: 1em;
