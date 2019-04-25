@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", function(){
   var wordsUsed =document.getElementById('wordsUsed');
   var hangman = document.getElementById('stickman').src;
   var winCondition =document.getElementById('message');
+  var endGame=document.getElementById('endGame');
   var overlayer = document.getElementById('overlayer');
   // var btnAnimals = document.getElementById('catAnimals')
   // var btnCars = document.getElementById('catCars')
@@ -48,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
   }
   function hard() {
-    lives=5
+   lives=5
    livesLost.innerHTML = 5;
    document.getElementById('easy').disabled = true;
    document.getElementById('medium').disabled = true;
@@ -59,11 +60,13 @@ document.addEventListener("DOMContentLoaded", function(){
     var parent = overlayer.parentNode;
     parent.removeChild(overlayer)
     startGame();
+    endGame.innerHTML= 'Animals'
   }
   function catCars() {
     var parent = overlayer.parentNode;
     parent.removeChild(overlayer)
     startGame2();
+    endGame.innerHTML= 'Cars'
   }
 
   //pick a random words
@@ -143,7 +146,7 @@ document.addEventListener("DOMContentLoaded", function(){
   function winOrLose(){
     if (winCounter === random.length)
     {
-      winCondition.innerHTML= 'Congratulations, you have WON!!!'
+      endGame.innerHTML= 'Congratulations, you have WON!!!'
       document.onkeypress = function(event){
         return false;
       }
@@ -152,7 +155,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
     } else if (lives === 0) {
       // alert('You have lost, the word was ' + random )
-      winCondition.innerHTML= 'You have lost, the word was ' + random
+      endGame.innerHTML= 'You have lost, the word was ' + random
       // location.assign('../project/index.html')
     }
   }

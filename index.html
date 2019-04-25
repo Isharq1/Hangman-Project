@@ -9,6 +9,8 @@
 
   </head>
   <body>
+    <h1 id='hangman'>HANGMAN</h1>
+
     <div class="container">
       <div class="overlayer" id="overlayer">
         <div class="top">
@@ -23,29 +25,31 @@
         </div>
       </div>
 
+      <div class="endGame">
+        <span id="endGame"></span>
+      </div>
+
       <div class="category">
           <a href="../project/pages/page1.html">Main menu</a>
           <a id="reset" href="../project/index.html">Reset</a>
-        <h1>HANGMAN</h1>
+          <a class="lives">You have <b><span id="count">-</span id="lives"> </b>Lives left</a>
         <div class="buttons">
-          <h5>Choose a difficulty:</h5>
+          <h5> Choose a difficulty:</h5>
           <button type="button" id="easy" >Easy</button>
           <button type="button" id="medium" >Medium</button>
           <button type="button" id="hard" >Hard</button>
-          <div class="">
-            <h3 id='message'>Type in a letter</h3>
-
-            <h3 id="puzzle">_ _ _ _</h3>
-          </div>
         </div>
           <div>
-            <div class="lives">You have <b><span id="count">7</span id="lives"> </b>Lives left</div>
           <div class="side-by-side">
             <div class="wordsUsed">
               <h3>Incorrect Letters</h3>
               <p id='wordsUsed' ></p>
             </div>
-            <img id="stickman" src="../project/images/257px-Penjat_-_12.svg.png" height="100px" width="120px" >
+            <div class="type">
+              <h3 id='message'>Type in a letter</h3>
+              <h3 id="puzzle"><b>_ _ _ _</b></h3>
+            </div>
+            <img id="stickman" src="../project/images/257px-Penjat_-_12.svg.png" height="200px" width="150px" >
           </div>
         </div>
       </div>
