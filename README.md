@@ -83,5 +83,5 @@ Even though the project has finished i didnt get all the tasks set by myself so 
 * Finally i would have liked to add a multiplier or a score sheet to make the game more competetive, in this game the user has to click play again to reset the game but adding the score sheet will add a score if the user won the game and decrease the score if the user had lost.
 * Add more categories.
 
-##Link to my Game:  https://isharq1.github.io/hangman-project/ 
+## Link to my Game:  https://isharq1.github.io/hangman-project/ 
 
