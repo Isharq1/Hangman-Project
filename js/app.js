@@ -4,16 +4,21 @@ document.addEventListener("DOMContentLoaded", function(){
 
   var cars = ['ferrari', 'lamborghini', 'buggati', 'zonda', 'saleen', 'tesla', 'mercedes','toyota','peugeot', 'mclaren', 'lexus', 'lancia', 'koenigsegg', 'jeep', 'honda', 'infiniti', 'jaguar', 'nissan', 'ford', 'seat', 'citreon', 'porsche', 'shelby', 'dodge', 'daewoo'];
 
+  // var challenge = ["a","b","c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y","z"];
+
   //keycode for the letter on the keyboard.
   var keyCodes = { 65: "a", 66: "b", 67: "c", 68: "d", 69: "e", 70: "f", 71: "g", 72: "h", 73: "i", 74: "j", 75: "k", 76: "l", 77: "m", 78: "n", 79: "o", 80: "p", 81: "q", 82: "r", 83: "s", 84: "t", 85: "u", 86: "v", 87: "w", 88: "x", 89: "y",90: "z"}
 
   //variables
   var wrongLetter = [];
   var lives;
+  // var lives2;
   var underScores = [];
   var userGuess = [];
   var random;
   var winCounter = 0;
+  // var winCounter2 = 0;
+
 
   //innerHTML changes
   var livesLost=document.getElementById('count')
@@ -23,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function(){
   var reset = document.getElementById('reset');
   var endGame=document.getElementById('endGame');
   var overlayer = document.getElementById('overlayer');
-  var cat =document.getElementById('cat');
+  // var cat =document.getElementById('cat');
 
 
   //when the button is clicked it will do something
@@ -32,6 +37,7 @@ document.addEventListener("DOMContentLoaded", function(){
   document.getElementById("easy").addEventListener("click", easy);
   document.getElementById("catAnimals").addEventListener("click", catAnimals);
   document.getElementById("catCars").addEventListener("click", catCars);
+  // document.getElementById("catChallenge").addEventListener("click", catChallenge);
 
   //=====================Upon starting new game=================
   //choice a category
@@ -39,14 +45,26 @@ document.addEventListener("DOMContentLoaded", function(){
     var parent = overlayer.parentNode;
     parent.removeChild(overlayer)
     startGame();
+    lives=0
     cat.innerHTML= ': ANIMAlS'
   }
   function catCars() {
     var parent = overlayer.parentNode;
     parent.removeChild(overlayer)
     startGame2();
+    lives=0
     cat.innerHTML= ': CARS'
   }
+  // function catChallenge() {
+  //   var parent = overlayer.parentNode;
+  //   parent.removeChild(overlayer)
+  //   startGame3();
+  //   cat.innerHTML= ': Challenge'
+  //   lives2 = 25;
+  //   document.getElementById('easy').disabled = true;
+  //   document.getElementById('medium').disabled = true;
+  //   document.getElementById('hard').disabled = true;
+  // }
 
   // choice a difficulty mode
   function easy() {
@@ -95,6 +113,17 @@ document.addEventListener("DOMContentLoaded", function(){
   //print underscores to puzzle
   puzzle.innerHTML = underScores.join(' ');
   }
+  // function startGame3(){
+  //   random = challenge[Math.floor( Math.random()*challenge.length)];
+  //   console.log('random word ' +random ) ;
+  //   //show the lenght of the word
+  //   for (var i = 0; i < random.length; i++)
+  //   {
+  //     underScores.push('_');
+  //   }
+  // //print underscores to puzzle
+  // puzzle.innerHTML = underScores.join(' ');
+  // }
 
   //======================Main Game=========================
   //user guesses
@@ -109,13 +138,15 @@ document.addEventListener("DOMContentLoaded", function(){
         for (var i = 0; i < random.length; i++)
         {
           //for random word if the guess equals the random word then go to the underscope and replace with the word
-          if (random[i] === keyCodes[userGuess] & lives>0)
+          if (random[i] === keyCodes[userGuess] & lives>0 )
           {
             underScores[i]= keyCodes[userGuess];
             winCounter++;
+            // winCounter2++;
             console.log(underScores);
             puzzle.innerHTML = underScores.join(' ')
             winOrLose();
+            // winOrLose2();
 
 
           }
@@ -130,10 +161,19 @@ document.addEventListener("DOMContentLoaded", function(){
           wordsUsed.innerHTML = wrongLetter.join(' ')
           livesLost.innerHTML = lives
         }
+        // lives2--;
+        // wordsUsed.innerHTML = wrongLetter.join(' ')
+        // if (lives>9) {
+        //   livesLost.innerHTML = lives2
+        //
+        // }else {
+        //   livesLost.innerHTML = lives
+        // }
         hangmanImage();
         console.log(lives);
         console.log(wrongLetter)
         winOrLose();
+        // winOrLose2();
       }
 
       //print typed letters and wrong letters
@@ -200,4 +240,26 @@ document.addEventListener("DOMContentLoaded", function(){
         reset.innerHTML = 'PLAY AGAIN'
     }
   }
+  // function winOrLose2(){
+  //   if (lives2 === 0)
+  //   {
+  //     endGame.innerHTML= 'Congratulations, you have WON!!!'
+  //     document.onkeypress = function(event){
+  //       return false;
+  //     }
+  //     reset.innerHTML = 'PLAY AGAIN'
+  //
+  //
+  //
+  //   }
+  //   else if (winCounter2 === random.length) {
+  //     // alert('You have lost, the word was ' + random )
+  //     endGame.innerHTML= 'You have lost,TRY AGAIN'
+  //     document.onkeypress = function(event){
+  //       return false;
+  //     }
+  //     // location.assign('../project/index.html')
+  //       reset.innerHTML = 'PLAY AGAIN'
+  //   }
+  // }
 })

@@ -107,15 +107,33 @@ a{
   text-decoration: none;
 
 }
-.middle{
-  color: black;
-  margin-top: 85px;
-}
 .bottom button:hover{
   background: #999;
   color: white;
   border: 2px solid #999;
   text-decoration: none;
+}
+#catChallenge{
+  font-size: 1.5em;
+  padding: 0.5em 1.5em;
+  background: secondary;
+  border: 2px solid secondary;
+  color: #999;
+  transition: 0.2s;
+  margin-top: 15px;
+  text-decoration: none;
+
+}
+#catChallenge:hover{
+  background: #999;
+  color: white;
+  border: 2px solid #999;
+  text-decoration: none;
+}
+
+.middle{
+  color: black;
+  margin-top: 85px;
 }
 .lives{
   margin-left: 320px;
