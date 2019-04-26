@@ -23,21 +23,21 @@ The game was created using three basic languages
 
 Below there are screenshots on how the game is played.
 
-![intro-page](images/intro-page)
+![intro-page](../project/images/intro-page)
 
 * Click PLAY to start the game and click the ? icon to know how to play
 
-![Category-page](images/category-page)
+![Category-page](../project/images/category-page)
 
 * Can click animals and all the animal words will show up or click cars and all the car words will show up.
 
-![Game-page](images/game-page)
+![Game-page](../project/images/game-page)
 
 * This page will not start unless you choose a difficulty level that will display the lives at the top of the page.
 * The red box is where the incorrect letter go into and the underscore show the lenght of the word needed to be guessed.
 * Main-menu will take you back to the intro page and reset will reset the game back to the category page.
 
-![Level-page](images/show-lives)
+![Level-page](../project/images/show-lives)
 
 * The difficulty levels display the lives left. Hard= 5 lives Medium= 7 lives and Easy= 9 lives
 
