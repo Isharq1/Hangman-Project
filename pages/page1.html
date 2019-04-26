@@ -2,43 +2,59 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Hangman Game</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Hangman project</title>
+    <link rel="stylesheet" href="style2.css">
 
-    <!--Bootstrap javascript-->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style1.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
   </head>
   <body>
+    <h1 id='hangman'>HANGMAN <span id="cat"></span> </h1>
 
-    <h1>HANGMAN</h1>
     <div class="container">
-      <div class="instructions">
+      <div class="overlayer" id="overlayer">
+        <div class="top">
+          <img src="../images/1024px-Hangman-5.svg.png" alt="" height="100px" width="150px;">
+        </div>
+        <div class="middle">
+          <h1>Categories:</h1>
+        </div>
+        <div class="bottom">
+          <button type="button" id="catAnimals">Animals</button>
+          <button type="button" id="catCars">Cars</button>
+        </div>
+      </div>
 
-        <button id='htp' type="button" class="btn btn-lg btn-secondary" data-toggle="popover" title="Rules" data-content="Hangman is a guessing game, the word to guess is represented by a row of dashes. If the player guess a letter which exists in the word, the script writes it in all its correct positions. if the player guess is wrong they lose a life. Difficulty's:
-        Hard= 5 lives Medium= 7 lives Easy= 9 lives">?</button>
-      <br>
+      <div class="endGame">
+        <span id="endGame"></span>
+      </div>
+
+      <div class="category">
+          <a href="../index.html">Main menu</a>
+          <a id="reset" href="../pages/page1.html">Reset</a>
+          <a class="lives">You have <b><span id="count">-</span id="lives"> </b>Lives left</a>
+        <div class="buttons">
+          <h5> Choose a difficulty:</h5>
+          <button type="button" id="easy" >Easy</button>
+          <button type="button" id="medium" >Medium</button>
+          <button type="button" id="hard" >Hard</button>
+        </div>
+          <div>
+          <div class="side-by-side">
+            <div class="wordsUsed">
+              <h3>Incorrect Letters</h3>
+              <p id='wordsUsed' ></p>
+            </div>
+            <div class="type">
+              <h3 id='message'>Type in a letter</h3>
+              <h3 id="puzzle"><b>_ _ _ _</b></h3>
+            </div>
+            <img id="stickman" src="../images/257px-Penjat_-_12.svg.png" height="200px" width="150px" >
+          </div>
+        </div>
+      </div>
+
     </div>
-      <!-- <img src="../images/1024px-Hangman-5.svg.png" alt="" height="100px" width="150px"> -->
-      <video width="320" height="240"  controls autoplay loop>
-        <source src="../images/PhonyLikelyCatfish.mp4" type="video/mp4" >
-
-      </video>
-      <br>
-      <button id="btn" type="button" class="btn btn-secondary"><a href="../index.html">PLAY</a></button>
-      <br>
-    </div>
-    <script type="text/javascript">
-
-      $(function () {
-        $('[data-toggle="popover"]').popover()
-      })
-
-    </script>
-
-
+    <script src="../js/app.js" charset="utf-8"></script>
   </body>
 </html>

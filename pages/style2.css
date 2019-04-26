@@ -1,0 +1,141 @@
+body{
+  font-family: sans-serif;
+  text-align: center;
+  background-image: url(../images/dark-grass-silhouette-and-grey-sky_nkwhsbqz__F0000.png);
+  background-size: cover;
+  color: gainsboro;
+}
+
+
+.category{
+  width: 700px;
+  height:400px;
+  margin-left: 360px;
+  background-image: url(../images/DLZHGX014_250x150_grande_1b6a57b5-097a-4b42-87c3-3d5af687ccaa_600x.jpg);
+  background-size: cover;
+  border-radius: 1em;
+  position: absolute;
+
+}
+
+.category button{
+  font-size: 1em;
+  padding: 0.5em 1.5em;
+  background: secondary;
+  border: 2px solid secondary;
+  color: #999;
+  transition: 0.2s;
+  /* margin-top: 15px; */
+  text-decoration: none;
+}
+#hangman{
+  margin-top:10px;
+  font-family: sunday holiday;
+  font-size: 4.5em;
+}
+
+h5{
+  color: black;
+  font-size: 1.5em;
+}
+
+.overlayer{
+  width: 700px;
+  height:400px;
+  margin-bottom: 20px;
+  margin-left: 360px;
+  background-image: url(../images/DLZHGX014_250x150_grande_1b6a57b5-097a-4b42-87c3-3d5af687ccaa_600x.jpg);
+  background-size: cover;
+  border-radius: 1em;
+  position: absolute;
+  z-index: 1;
+}
+
+.side-by-side{
+  display: flex;
+  margin-top: 30px;
+
+}
+
+.wordsUsed{
+  padding: 10px;
+  margin-right:10px;
+  margin-left: 10px;
+  color: black;
+  background-color: brown;
+  border: black, 2px, solid;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+#wordsUsed{
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.type{
+  font-family: sans-serif;
+  font-size: 1.5em;
+  color: black;
+}
+
+a{
+  display: inline;
+  padding-left: 10px;
+  padding-top: 5px;
+  text-decoration: none;
+  color: black;
+}
+
+.buttons{
+  text-align: center;
+}
+
+.top{
+  position: absolute;
+  display: block;
+}
+
+.bottom button{
+  font-size: 1.5em;
+  padding: 0.5em 1.5em;
+  background: secondary;
+  border: 2px solid secondary;
+  color: #999;
+  transition: 0.2s;
+  margin-top: 15px;
+  text-decoration: none;
+
+}
+.middle{
+  color: black;
+  margin-top: 85px;
+}
+.bottom button:hover{
+  background: #999;
+  color: white;
+  border: 2px solid #999;
+  text-decoration: none;
+}
+.lives{
+  margin-left: 320px;
+  color: black;
+
+}
+#count{
+color: red;
+}
+
+.type{
+  margin-left: 30px;
+  position: relative;
+}
+
+#stickman{
+  margin-left: 30px;
+}
+
+#endGame{
+
+  font-size: 3em;
+}
