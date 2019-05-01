@@ -23,21 +23,21 @@ The game was created using three basic languages
 
 Below there are screenshots on how the game is played.
 
-![intro-page](images/intro-page)
+![intro-page](images/intro-page.png)
 
 * Click PLAY to start the game and click the ? icon to know how to play
 
-![Category-page](images/category-page)
+![Category-page](images/category-page.png)
 
 * Can click animals and all the animal words will show up or click cars and all the car words will show up.
 
-![Game-page](images/game-page)
+![Game-page](images/game-page.png)
 
 * This page will not start unless you choose a difficulty level that will display the lives at the top of the page.
 * The red box is where the incorrect letter go into and the underscore show the lenght of the word needed to be guessed.
 * Main-menu will take you back to the intro page and reset will reset the game back to the category page.
 
-![Level-page](images/show-lives)
+![Level-page](images/show-lives.png)
 
 * The difficulty levels display the lives left. Hard= 5 lives Medium= 7 lives and Easy= 9 lives
 
@@ -82,4 +82,6 @@ Even though the project has finished i didnt get all the tasks set by myself so 
 * Another improvement to make the game whole would be to add sound in the game, every game has some aspect of sound to it and i didnt get around to adding this, also due to chrome not allowing autoplay. But i will add sound to the game to make it feel more like a game in the future.
 * Finally i would have liked to add a multiplier or a score sheet to make the game more competetive, in this game the user has to click play again to reset the game but adding the score sheet will add a score if the user won the game and decrease the score if the user had lost.
 * Add more categories.
+
+## Link to my Game:  https://isharq1.github.io/hangman-project/ 
 

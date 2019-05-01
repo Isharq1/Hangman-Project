@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function(){
   // create an array of words
   var animals = ['llama', 'octopus', 'elephant', 'bear', 'jerobe' , 'snake', 'canary', 'snail', 'giraffe', 'ram', 'cow', 'lion', 'alligator', 'tiger', 'monkey', 'beaver', 'zebra', 'deer', 'penguin', 'cockroach', 'chicken', 'jaguar', 'whale', 'butterfly', 'cougar', 'jellyfish', 'shark', 'kangaroo', 'mouse', 'lizard'];
 
-  var cars = ['ferrari', 'lamborghini', 'buggati', 'zonda', 'saleen', 'tesla', 'mercedes','toyota','peugeot', 'mclaren', 'lexus', 'lancia', 'koenigsegg', 'jeep', 'honda', 'infiniti', 'jaguar', 'nissan', 'ford', 'seat', 'citreon', 'porsche', 'shelby', 'dodge', 'daewoo'];
+  var cars = ['ferrari', 'lamborghini', 'bugatti', 'zonda', 'saleen', 'tesla', 'mercedes','toyota','peugeot', 'mclaren', 'lexus', 'lancia', 'koenigsegg', 'jeep', 'honda', 'infiniti', 'jaguar', 'nissan', 'ford', 'seat', 'citroen', 'porsche', 'shelby', 'dodge', 'daewoo'];
 
   // var challenge = ["a","b","c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y","z"];
 
